@@ -1,0 +1,65 @@
+body {
+  background-color: #d3d3d3; /* Light gray background */
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.postcard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+      "dear stamp"
+      "note note";
+  background-color: #ffffff; /* White postcard background */
+  width: 850px;
+  height: 535px;
+  margin: 0 auto;
+  margin-top: 5%;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #333333; /* Dark text color */
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+#dear {
+  grid-area: dear;
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333333;
+}
+
+#message {
+  grid-area: note;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+#mail {
+  grid-area: stamp;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#mail_stamp {
+  max-width: 80%;
+}
+
+#from {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#address {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #800020; /* Dark red color */
+}
